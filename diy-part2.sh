@@ -29,3 +29,7 @@ git clone https://github.com/xiaorouji/openwrt-passwall package/passwall-luci
 # 更新 golang 1.25 版本
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/lang/golang
+rm -rf feeds/packages/net/ddns-go
+rm -rf feeds/luci/applications/luci-app-ddns-go
+git clone https://github.com/sirpdboy/luci-app-ddns-go.git package/ddns-go
+
